@@ -15,15 +15,6 @@ The goal is to select a Fantasy Football team that maximizes the sum of previous
 -   **Formation:** A predefined tactical formation given by $N_1$ defenders, $N_2$ midfielders, and $N_3$ forwards, where $1 \le N_1, N_2, N_3 \le 5$ and $N_1 + N_2 + N_3 = 10$.
 -   **Goalkeeper:** Exactly one goalkeeper must be selected.
 
-## 📊 Data Input
-
-The program takes two input files:
-
-1.  **Player Database:** Each line represents a player with the format: `Name; Position; Price; Team; Points`.
-    -   **Position:** "por" (goalkeeper), "def" (defender), "mig" (midfielder), "dav" (forward).
-    -   **Price/Points:** Natural numbers.
-2.  **Query File:** Contains 5 natural numbers: $N_1, N_2, N_3, T, J$.
-
 ## ⚙️ Methodology
 
 Three distinct C++ programs (`exh.cc`, `greedy.cc`, `mh.cc`) are implemented to solve the optimization problem:
@@ -48,17 +39,6 @@ Three distinct C++ programs (`exh.cc`, `greedy.cc`, `mh.cc`) are implemented to 
 -   Similar to the exhaustive search, it overwrites the output file with improved solutions as they are found.
 -   Execution time limited to 1 minute.
 
-## 📝 Output Format
-
-The output is written to a file with 7 lines:
-
-1.  Execution time in seconds (double, max 1 decimal).
-2.  `POR: ` followed by goalkeeper's name.
-3.  `DEF: ` followed by names of selected defenders, separated by `;`.
-4.  `MIG: ` followed by names of selected midfielders, separated by `;`.
-5.  `DAV: ` followed by names of selected forwards, separated by `;`.
-6.  `Punts:` followed by total team points.
-7.  `Preu: ` followed by total team price.
 
 ##  оценки Evaluation Criteria
 
